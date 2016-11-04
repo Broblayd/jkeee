@@ -1,0 +1,56 @@
+
+.teams {
+   position: absolute;
+   width: 100%;
+   margin: 16px;
+   border-top: solid;
+   border-bottom: solid;
+   border-collapse: collapse;
+   border-width: 1px;
+   display: table;
+   table-layout: fixed;
+}
+.row{
+   display: table-row;
+}
+
+/*.place {
+	max-width: 40px;
+   text-overflow: clip;
+   
+}
+*/
+
+.name {
+   min-width: 150px;
+   border-right: solid;
+   border-width: 1px;
+   text-overflow: clip;
+
+}
+
+.name::after {
+  content: "";
+  display: block;
+  min-width: 150px;
+/*  высоту и цвет убрать, они для наглядности  */
+  height: 5px;
+  /*background-color: green; */
+}
+
+#cell {
+	border-top: solid;
+	border-bottom: solid;
+	border-width: 1px;
+	padding: 2px;
+   display: table-cell;
+   
+   
+
+}
+
+.row:first-child{max-width:1em;overflow:hidden}
+
+a { 
+    text-decoration: none; 
+   } 
